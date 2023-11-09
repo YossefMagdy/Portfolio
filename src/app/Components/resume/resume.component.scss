@@ -1,0 +1,37 @@
+@import '../../../variables';
+.titleTag{
+    color: var(--Secondry);
+}   
+
+.spacer{
+    width: 80%;
+    height: 5px;
+    color: black;
+}
+
+.content{
+    background: var(--MainBackground);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+    transition: 1s;
+    h3{
+        color: var(--Secondry);
+    }
+    span{
+        color: var(--primary);
+    }
+}
+
+.content:hover{
+    background: linear-gradient(145deg, #f02981 0%, #c81901 100%);
+
+}
+
+.Date{
+    color: var(--Onhover);
+    margin-top: 10px;
+    i{
+        color: var(--primary);
+    }
+}

@@ -1,0 +1,165 @@
+@import '../../../variables';
+
+.header {
+    background-color: var(--SecondryBackground);
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.082);
+
+}
+
+.name {
+    h2 {
+        color: var(--Secondry);
+    }
+
+    span {
+        color: var(--primary);
+    }
+}
+
+.PersonalInfo {
+    padding: 25px 60px;
+
+    div {
+        h6 {
+            color: var(--primary);
+        }
+
+        p {
+            color: var(--Secondry);
+        }
+    }
+
+}
+
+.info {
+    position: relative;
+    padding: 0 35px;
+    display: flex;
+}
+
+.info::before {
+    content: "";
+    position: absolute;
+    width: 0.08px;
+    height: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+.image {
+    position: relative;
+    bottom: 70px;
+    width: 200px;
+    height: 200px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: var(--MainBackground) ;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+.social-Media {
+
+    li {
+        width: 53px;
+        height: 53px;
+        background-color: var(--MainBackground);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+        cursor: pointer;
+        transition: 0.6s;
+     
+            a {
+                color: var(--Secondry);
+            }
+ 
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    li:hover {
+        transform: translateY(-6px);
+
+    }
+}
+
+
+
+.Spacer {
+    width: 1.05px;
+    background-color: black;
+    padding: 0;
+}
+
+.contactInfo {
+    display: flex;
+
+    .phone {
+        margin-left: 60px;
+    }
+
+    a {
+        color: var(--Secondry);
+    }
+}
+
+@media (max-width:1200px) {
+    .info {
+
+        display: block;
+        text-align: center;
+    }
+
+    .image {
+        margin: auto;
+        margin-bottom: -70px;
+    }
+
+    .social-Media {
+        ul {
+            justify-content: center;
+
+          
+        }
+    }
+
+    .contactInfo {
+        display: block;
+        margin-bottom: 70px;
+
+        .phone {
+            margin-left: 0;
+        }
+    }
+
+}
+
+@media (max-width:770px) {
+    .info::before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 0.08px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contactInfo {
+        display: flex;
+        margin-bottom: 20px;
+
+        .phone {
+            margin-left: 60px;
+        }
+    }
+}

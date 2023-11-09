@@ -1,0 +1,148 @@
+@import '../../../variables';
+
+.parentInfo{
+    background-color: var(--MainBackground);
+    padding: 20px;
+    border-radius: 10px;
+}
+.image{
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+        transition: 0.5s;
+    }
+    img:hover{
+        scale: 1.1;
+    }
+}
+
+.childInfo{
+    h2{
+        color: var(--Secondry);
+    }
+    p{
+        color: var(--primary);
+    }
+
+}
+
+.contactInformation{
+    margin-top: 30px;
+    p{
+        color: var(--primary);
+        margin: 0;
+        a{
+            color: var(--Secondry);
+            cursor: pointer;
+            position: relative;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -5px;
+            background-color: var(--Onhover);
+            transition: 1s;
+        }
+        a:hover{
+            color: var(--Onhover);
+        }
+        a:hover::before{
+            width: 100%;
+        }
+       
+    }
+}
+.social-Media{
+    h3{
+        color: var(--Secondry);
+        margin-bottom: 15px;
+    }
+    
+    li{
+        width: 53px;
+        height: 53px;
+        background-color: var(--MainBackground);
+        display: flex;
+        color: var(--Secondry);
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+        cursor: pointer;
+        transition:  0.6s;
+        a {
+            color: var(--Secondry);
+        }
+        i{
+            font-size: 24px;
+        }
+    }
+    li:hover{
+       transform: translateY(-6px);
+     
+    }
+}
+
+.contactInfo{
+    background-color: var(--MainBackground);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label{
+    color: var(--primary);
+    margin-left: 8px;
+
+}
+.formInput{
+    display: block;
+    width: 100%;
+    background-color: var(--inputBackground);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0;
+    border: 5px solid var(--MainBackground);
+    color: var(--Secondry);
+    padding: 0 10px;
+    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+}
+
+ 
+
+.formInput:focus{
+    border: var(--Onhover);
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: var(--Onhover);
+}
+.SendMessageBtn{
+    width: 100%;
+    height: 58px;
+    color: var(--Onhover);
+    background-color: var(--MainBackground);
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+    
+    border-radius: 7px;
+    transition: 0.6s;
+}
+
+.SendMessageBtn:hover{
+    transform: translateY(-8px);
+}
+
+.alertMessage{
+    height: 45px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--AlertBox);
+    color: var(--alertText);
+    p{
+        margin: 0;
+    }
+}

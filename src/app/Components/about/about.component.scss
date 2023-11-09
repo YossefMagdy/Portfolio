@@ -1,0 +1,47 @@
+@import '../../../variables';
+
+.myImage {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    img{
+            transition: 1s;
+    }
+    img:hover{
+            scale: 1.1;
+    }
+}
+
+.visit{
+    color: var(--Onhover);
+        font-weight: 400;
+}
+.aboutMe {
+    
+    h2{
+        font-weight: 700;
+    }
+    p{
+        color: var(--Secondry);
+    }
+}
+.DownloadBtn{
+    width: 200px;
+    height: 58px;
+    background-color: var(--MainBackground);
+    a{
+        color: var(--Onhover);
+       text-decoration: none;
+    }
+    
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+    transition: 0.6s;
+    
+}
+.DownloadBtn:hover{
+    transform: translateY(-8px);
+}

@@ -1,0 +1,14 @@
+<div class="p-4">
+    <div class="row gx-3">
+        <div class="col-md-6 ">
+            <div class="skills">
+                <app-progressbar *ngFor="let  skill of FirstSkills" [SkillName]="skill.name" [width]="skill.percent"></app-progressbar>
+            </div>
+        </div>
+        <div class="col-md-6  mt-md-0 mt-3">
+            <div class="skills">
+                <app-progressbar *ngFor="let  skill of SecondSkills" [SkillName]="skill.name" [width]="skill.percent"></app-progressbar>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+@import '../../../../variables';
+
+.projects{
+    padding: 20px;
+    background-color: var(--MainBackground);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.186);
+}
+
+.image{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    img{
+        transition: 1s;
+    }
+    img:hover{
+        scale: 1.1;
+    }
+}
+.layout{
+    
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.555);
+    transition: 1s;
+    span{
+        position: absolute;
+        padding: 5px 7px;
+        background-color: white;
+        box-shadow: 0 0 10px 0px black;
+        border-radius: 10px;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%,-50%);
+         transition: 1s;
+         cursor: pointer;
+         a{
+            color: var(--Onhover);
+
+        }
+         i{
+            font-size: 20px;
+            font-weight: 600;
+           
+         }
+    }
+}
+.layout:hover{
+    opacity:1;
+    span{
+        top: 50%;
+
+    }
+}
+.projectDescription{
+    h3{
+        color: var(--Onhover);
+    }
+    p{
+        color: var(--Secondry);
+    }
+}
+.arrow{
+    font-size: 0;
+    rotate: 40deg;
+    color: var(--Onhover);
+    cursor: pointer;
+    transition: 1s;
+}
+.projects:hover .arrow{
+    font-size:18px;
+}

@@ -1,0 +1,15 @@
+.animation{
+  position: relative;
+}
+
+#particles-js,
+#over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#over {
+  z-index: 10;
+}

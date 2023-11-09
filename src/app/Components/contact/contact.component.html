@@ -1,0 +1,85 @@
+<div class="p-4">
+    <div class="row gx-3 ">
+        <div class="col-lg-5">
+            <div class="parentInfo h-100">
+                <div class="image">
+                    <img class="w-100" src="../../../assets/contact1.png" alt="">
+                </div>
+                <div class="childInfo">
+                    <h2 class="mt-3">Yossef Magdy</h2>
+                    <p>Front-end Developer</p>
+                    <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+                </div>
+
+
+                <div class="contactInformation">
+                    <p>Phone : <a class="text-decoration-none" href="tel:01149929873">01149929873</a></p>
+                    <p>Email : <a class="text-decoration-none" href="mailto:Y.f.magdy@gmail.com">Y.f.magdy&#64;gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="social-Media mt-5">
+                    <h3>FIND WITH IN</h3>
+                    <ul class="d-flex list-unstyled">
+                        <li title="facebook"><a href="https://web.facebook.com/YousseFfMagdi" target="_blank"><i class="fa-brands fa-facebook-f "></i></a></li>
+                        <li title="linkedin" class="mx-3"><a href="https://www.linkedin.com/in/yossef-magdi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+                        <li title="github"> <a href="https://github.com/yossefmagdy" target="_blank"><i class="fa-brands fa-github" ></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="contactInfo h-100">
+                <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+                    <div class="d-flex ">
+                        <div class="w-100 me-2">
+                            <label for="name">YOUR NAME</label>
+                            <input type="text" name="user_name" id="name" minlength="3" class="formInput" #name="ngModel" ngModel required>
+                        </div>
+                        <div class="w-100 ">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="user_phone" id="phone" #phone="ngModel" class="formInput" ngModel
+                                >
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <label for="email">EMAIL</label>
+                        <input type="email" email name="user_email" id="email" #email="ngModel" class="formInput" ngModel required>
+                    </div>
+                    <div class="w-100">
+                        <label for="subject">SUBJECT</label>
+                        <input type="text" name="user_subject" id="subject" class="formInput" ngModel>
+                    </div>
+                    <div class="w-100">
+                        <label for="message">YOUR MESSAGE</label>
+                        <textarea class="formInput h-100 py-2" name="message" minlength="4" #message="ngModel" id="message" cols="30"
+                            rows="11" ngModel required></textarea>
+                    </div>
+
+                    <div class="mt-4">
+                        <button type="submit" class="SendMessageBtn">SEND MESSAGE <i *ngIf="!Mailsend"
+                                class="fa-solid fa-arrow-right"></i> <i *ngIf="Mailsend" class="fa-sharp mx-2 fa-solid fa-check"></i></button>
+                    </div>
+
+                    <div *ngIf="form.invalid && name.errors && form?.submitted" class="alertMessage  mt-3">
+                        <p>name is Required</p>
+                    </div>
+                    <div *ngIf="name.valid && form.invalid && email.errors && form?.submitted" class="alertMessage  mt-3">
+                        <p>email is Required</p>
+                    </div>
+       
+                    <div *ngIf="email.valid && form.invalid &&message.errors && form?.submitted"  class="alertMessage  mt-3">
+                        <p>message is Required</p>
+                    </div>
+                    <!-- <div *ngIf="form.invalid && form?.submitted" class="alertMessage  mt-3">
+                        <p>Name,Email,phone and Message is Required</p>
+                    </div> -->
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+

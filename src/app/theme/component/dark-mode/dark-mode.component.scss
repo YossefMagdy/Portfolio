@@ -1,0 +1,62 @@
+@import '../../../../variables';
+
+.mode {
+    position: relative;
+
+    width: 50px;
+    height: 25px;
+    border-radius: 12.5px;
+    background-color: var(--MainBackground);
+
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: var(--Secondry);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 50%;
+        // right: 2px;
+        transform: translateY(-50%);
+
+        i {
+            color: var(--Onhover);
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+}
+
+.mode2 {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: var(--SecondryBackground);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.082);
+
+    i {
+        color: var(--Secondry);
+    }
+
+    z-index: 99999;
+    transition: 1s;
+
+}
+
+.clipPath {
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+}

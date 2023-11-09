@@ -1,0 +1,16 @@
+<!-- <div class="mode">
+    <div (click)="dark=!dark"  [ngStyle]="{'left':!dark?'4px':'','right':dark?'4px':''}" class="toggle" style="cursor: pointer;">
+        <i *ngIf="dark"  class="fa-regular fa-moon"></i>
+        <i *ngIf="!dark" class="fa-regular fa-sun"></i>
+    </div>
+</div>
+ -->
+
+ <div class="mode2"  (click)="dark=!dark ;changeTheme()" style="cursor: pointer;" >
+    <i *ngIf="!dark"  class="fa-regular fa-moon fs-1"></i>
+        <i *ngIf="dark" class="fa-regular fa-sun fs-1"></i>
+    </div>
+    
+    <div class="clipPath" [@clipAth]="state" ></div>
+
+ <!-- [ngClass]="{'clipPath':!dark}" -->
