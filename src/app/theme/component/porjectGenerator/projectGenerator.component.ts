@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projectGenerator',
@@ -12,5 +11,10 @@ export class PorjectComponent {
   @Input() projectImage:string=''
   @Input() projectDescription:string=''
   @Input() DemoLink:string=''
+  @Input() repo:string=''
 
+
+  GoToRepo(){
+    window.open(this.repo)
+  }
 }
