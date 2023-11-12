@@ -32,7 +32,7 @@ percentCountStop=setInterval(()=>{
     clearInterval(this.percentCountStop);
   }
 
-},10)
+},25)
 
 state='start'
 
