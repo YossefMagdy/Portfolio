@@ -1,7 +1,7 @@
 <div class="p-4">
    <div class="row g-3">
     <div class="col-lg-4 " *ngFor="let project of projectInfo">
-       <app-projectGenerator [DemoLink]="project.demoLink" [projectName]="project.projectName"  [projectImage]="project.projectImage" [projectDescription]="project.projectDescription"></app-projectGenerator>
+       <app-projectGenerator [DemoLink]="project.demoLink" [projectName]="project.projectName"  [projectImage]="project.projectImage" [projectDescription]="project.projectDescription" [repo]="project.repo"></app-projectGenerator>
     </div>
  
    </div>
