@@ -17,6 +17,10 @@
     transition: 1s;
     h3{
         color: var(--Secondry);
+        span{
+            color: var(--Onhover);
+            font-size: 20px;
+        }
     }
     span{
         color: var(--primary);
