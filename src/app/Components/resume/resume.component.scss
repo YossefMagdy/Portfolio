@@ -1,4 +1,8 @@
 @import '../../../variables';
+
+.resume{
+    padding: 40px 40px;
+}
 .titleTag{
     color: var(--Secondry);
 }   
@@ -17,10 +21,7 @@
     transition: 1s;
     h3{
         color: var(--Secondry);
-        span{
-            color: var(--Onhover);
-            font-size: 20px;
-        }
+
     }
     span{
         color: var(--primary);
@@ -33,5 +34,34 @@
     margin-top: 10px;
     i{
         color: var(--primary);
+    }
+}
+
+.location{
+    color: var(--Onhover) !important;
+    font-size: 20px;
+
+}
+
+.postions{
+    position: relative;
+   margin-inline-start: 40px;   
+}
+
+.postions::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    top: 20%;
+    left: -34px;
+    border-radius: 50%;
+}
+
+
+@media (max-width:397px){
+    .resume{
+        padding:20px 10px ;
     }
 }
